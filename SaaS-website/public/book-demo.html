@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book A Demo — <span class="company-name">Bluewave SaaS Solutions</span></title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-container">
+        <img src="assets/images/logo.png" alt="Company Logo" class="logo" />
+        <span class="logo-text company-name"></span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="book-demo.html" class="active">Book Demo</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="download.html" class="btn-download">Download App</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section flex-col-center">
+      <div class="container demo-card">
+        <h1>Book a Demo</h1>
+        <form class="demo-form" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" name="_replyto" id="email" placeholder="Enter your email address" required />
+          </div>
+          <div class="form-row">
+            <label for="company">Company Name</label>
+            <input type="text" name="company" id="company" placeholder="Enter your company name" required />
+          </div>
+          <div class="form-row">
+            <label for="product">Product Interested In</label>
+            <select name="product" id="product" required>
+              <option value="" disabled selected>Select a product</option>
+              <option value="HR Management System">HR Management System</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <button class="btn-primary" type="submit">Book a Demo</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© <span class="company-name"></span> 2025. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
